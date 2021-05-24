@@ -15,7 +15,7 @@ jobs:
     - uses: actions/checkout@1.0.0
     
     - name: Create pull request
-      uses: thomaseizinger/create-pull-request@master
+      uses: gdcorp-action-public-forks/create-pull-request@master
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         head: ${{ github.ref }}
